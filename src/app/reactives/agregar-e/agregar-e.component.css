@@ -1,0 +1,67 @@
+.Hombre{
+    background-color: black;
+    
+}
+.Mujer{
+    background-color:  red;
+    
+}
+
+.icono{
+    width: 30px;
+    height: 30px;
+}
+
+.pull-right {
+    float: right !important;
+  }
+
+
+
+a{text-decoration: none;
+};
+
+.card{
+    border-radius: 30%;
+    padding-left: 400px;
+}
+.row{
+    margin-top: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.card-img-top{
+    min-width: auto;
+    max-width: 629px;
+    height: 250;
+    position: center;
+ }
+
+.imgPersonaje{
+    height: 250px;
+    width: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+.pull-right {
+    float: right !important;
+  }
+
+.card-body{
+    height: 100px;
+    width: 100%;
+}
+.espacio{
+    margin-left: 300px;
+    margin-right: 300px;
+}
+h1{
+    padding-top: 30px;
+    text-align: center;
+    padding-bottom: 30px;
+    font: size 90px;;
+    color:  #084c4f;
+    font-style: italic;
+}

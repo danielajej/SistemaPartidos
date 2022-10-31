@@ -1,0 +1,30 @@
+
+h1{
+    padding-top: 30px;
+    text-align: center;
+    padding-bottom: 30px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font: size 90px;;
+    color: #944E94;
+    font-style: italic;
+}
+.campos{
+    font-size: x-large;
+    text-align: center;
+}
+
+.productos{
+    text-align: center;
+    margin-top: 10px;
+}
+
+.fondo{
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    
+}
+
+.espacios{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}

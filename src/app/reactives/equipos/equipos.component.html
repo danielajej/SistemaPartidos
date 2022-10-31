@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar navbar-dark fuente" style="background-color: #0d7e84;">
+    <div class="container-fluid">
+         <a class="navbar-brand" style=" font-size: x-large; font-weight:200;" href="./reactive/logeado">
+          Manejo de Torneos
+            </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+      data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <!-- <a class="nav-link" href="./reactive/agregar">Agregar</a> -->
+          <a class="nav-link" href="./reactive/jugadores">Jugadores</a>
+          <a class="nav-link" href="./reactive/torneos">Torneos</a>
+          <a class="nav-link" href="./reactive/equipos">Equipos</a>
+          <a class="nav-link" href="./reactive/arbitros">Arbitros</a>
+  <!--         <a class="nav-link" href="./reactive/fechas">Fechas</a>
+   -->        <a class="nav-link" href="./../../auth/pages/login" (click)="logout()">Cerrar Sesión</a>
+  
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-8">    <h1  >Equipos</h1>
+    </div>
+
+    <div class="col-3">
+      <button type="button" [routerLink]="['/reactive/agregarE']" class="btn btn-outline-primary pull-right" style="margin-top: 30px;">Agregar</button>
+    </div>
+  </div>
+    
+  </div>
+
+  <div class="row">
+    <div class="col-12">
+      <div class="row row-cols-1 row cols-md-3 row-cols-lg-3 row-cols-sm-2 g-2" >
+        <div *ngFor="let l of Lista" [routerLink]="['/reactive/updateE', l.id]" >
+          <div class="card">
+            <img [src]="l.logo" class="card-img-top imgPersonaje" >
+            <div class="card-body text-white card">
+              <h5 class="text-uppercase"  >{{l.nombre}}</h5>
+            </div>
+          </div>
+        </div>
+      
+      </div>
+    </div>
+  </div>
+  
+  <!-- 
+  <div class="container">
+    <div class="row">
+      <div class="col-8">    <h1 style="color: #944E94;" >Equipos</h1>
+    </div>
+
+    <div class="col-3">
+      <button type="button" [routerLink]="['/reactive/agregarE']" class="btn btn-outline-primary pull-right" style="margin-top: 30px;">Agregar</button>
+    </div>
+  </div>
+    
+  </div>
+  <div class="container">
+    <div class="fondo">
+      <table class="table">
+        <thead class="campos">
+            <tr>
+                <th scope="col">ID</th>
+                <th scope="col">Nombre</th>
+                <th scope="col">Logo</th>
+                <th scope="col">Actualizar</th>
+                <th scope="col">Eliminar</th>
+            </tr>
+        </thead>
+        
+        <tbody class="productos" *ngFor="let l of Lista">
+          <tr>
+            <th class="espacios">{{l.id}}</th>
+            <td class="espacios">{{l.nombre}}</td>
+             <img src="getImage(l.logo)" alt="">
+            <td><button type="button" [routerLink]="['/reactive/updateE', l.id]"
+                    class="btn btn-outline-primary">Actualizar</button></td>
+            <td><button type="button" (click)="Eliminar(l.id)"
+                    class="btn btn-outline-danger">Eliminar</button></td> 
+        
+          </tr>
+                
+        </tbody>
+        
+      </table>
+    </div>
+    
+  </div> -->
+  
+</body>
+</html>
+
+
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+<!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">

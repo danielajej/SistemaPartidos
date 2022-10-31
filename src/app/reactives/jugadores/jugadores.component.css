@@ -1,0 +1,29 @@
+
+h1{
+    padding-top: 30px;
+    text-align: center;
+    padding-bottom: 30px;
+    font: size 90px;;
+    color:  #084c4f;
+    font-style: italic;
+}
+.campos{
+    font-size: x-large;
+    text-align: center;
+}
+
+.productos{
+    text-align: center;
+    margin-top: 10px;
+}
+
+.fondo{
+    background-color:  #c6e4e6;
+    border-radius: 30px;
+    
+}
+
+.espacios{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}

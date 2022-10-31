@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  
+  <div class="container"  style="text-align: right; padding-top: 10px; ">
+    <button type="button" style="font-family: FoodPacker; font-size:x-large" [routerLink]="['../../auth/pages/login/']">Login</button>
+  </div>
+  <div class="container">
+    <h1 class="titulo"> La Huastequita </h1>
+  </div>
+
+  <div class="container">
+    <h1>Menú</h1>
+  </div>
+  <div class="container">
+    <div class="fondo">
+      <table class="table">
+        <thead class="campos">
+            <tr>
+                <th scope="col" style=" font-family: FoodPacker; font-weight: 200;">Nombre</th>
+                <th scope="col" style=" font-family: FoodPacker; font-weight: 200;">Descripción</th>
+                <th scope="col" style=" font-family: FoodPacker; font-weight: 200;">Precio</th>
+            </tr>
+        </thead>
+        
+        <tbody class="productos" *ngFor="let l of Lista">
+            
+                <th class="espacios">{{l.nombre}}</th>
+                <td class="espacios">{{l.descripcion}}</td>
+                <td class="espacios">${{l.precio}}.00</td>
+                <!-- <td><button type="button" [routerLink]="['/reactive/update', l.id]"
+                        class="btn btn-outline-primary">Actualizar</button></td>
+                <td><button type="button" (click)="Eliminar(l.id)"
+                        class="btn btn-outline-danger">Eliminar</button></td> -->
+            
+        </tbody>
+        
+      </table>
+    </div>
+    
+  </div>
+  
+</body>
+</html>
+
+
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+<!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
